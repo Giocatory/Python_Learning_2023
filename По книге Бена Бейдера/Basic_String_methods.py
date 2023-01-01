@@ -3,6 +3,7 @@
 one_word = "Enterprise"
 second_word = "     Production    "
 
+print(type(one_word))  # <class 'str'>
 print(one_word.endswith("se"))  # True
 print(one_word.startswith("ent"))  # False (start with 'Ent')
 print(one_word.find("r"))  # 4 (first search) if you don't search then return -1
