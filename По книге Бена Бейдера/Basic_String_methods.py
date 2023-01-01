@@ -14,6 +14,7 @@ print(one_word.replace("prise", " name"))  # Enterprise => Enter name
 print(one_word * 2)  # EnterpriseEnterprise
 print(len(one_word))  # 10
 print(f"{one_word}-{second_word.strip().lower()}")  # Enterprise-production
+print("Enter" in one_word)  # True
 
 
 # Mini task for replace words
