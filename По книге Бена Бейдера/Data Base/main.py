@@ -14,6 +14,7 @@ def main():
         time = row[0]
         print(time)  # 2023-01-04 09:21:34
 
+        cursor.execute('INSERT INTO People VALUES("Mikhail", "Derkunov", 34);')
         cursor.executescript(create_table)
         # cursor.execute(query) - только для одной команды
         # cursor.executescript(query's) - для нескольких команд
