@@ -8,8 +8,8 @@ def main():
         cursor = connection.cursor()
         cursor.execute(simple_query)
 
-        for row in cursor.fetchall():
-            print(*row)  # return tuple
+        for row in cursor.fetchall():  # fetchall() возращает список кортежей
+            print(*row)
 
 
 if __name__ == '__main__':
