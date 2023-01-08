@@ -16,3 +16,14 @@ def print_dict_any(**kwargs):
 
 
 print_dict_any(a=2, b=1, c=3)  # {'a': 2, 'b': 1, 'c': 3}
+
+
+def cross_print(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+cross_print(1, 2, 3, 4, 5, 6, one=1, two=2, three=3)
+
+# (1, 2, 3, 4, 5, 6)
+# {'one': 1, 'two': 2, 'three': 3}
