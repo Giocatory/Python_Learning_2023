@@ -21,19 +21,6 @@ print(Factorial_Two(5))  # 120
 print(Factorial(5))  # 120
 
 
-# function sum elements in list
-def sum_elements(*args) -> int:
-    return sum(args)
-
-
-def sum_elements_list(args: list) -> int:
-    return sum(args)
-
-
-print(sum_elements(1, 2, 3, 4, 5))  # 15 (arguments numbers)
-print(sum_elements_list([1, 2, 3, 4, 5]))  # 15 (arguments list)
-
-
 # print dictionary
 def print_dict(dictionary: dict):
     for k, v in dictionary.items():
