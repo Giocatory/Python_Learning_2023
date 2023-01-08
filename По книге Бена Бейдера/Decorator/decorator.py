@@ -1,14 +1,14 @@
 # Декоратор - это функция, ожидающая ДРУГУЮ функцию в качестве параметра
 def main():
-    def MakeBold(fn):
+    def MakeBold(func):
         def wrapped():
-            return f"<b>{fn()}</b>"
+            return f"<b>{func()}</b>"
 
         return wrapped
 
-    def MakeItalic(fn):
+    def MakeItalic(func):
         def wrapped():
-            return f"<i>{fn()}</i>"
+            return f"<i>{func()}</i>"
 
         return wrapped
 
